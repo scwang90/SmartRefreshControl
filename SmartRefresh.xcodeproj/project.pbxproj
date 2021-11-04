@@ -7,30 +7,235 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6CA50152734130F001363AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50142734130F001363AB /* AppDelegate.swift */; };
-		D6CA50172734130F001363AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50162734130F001363AB /* SceneDelegate.swift */; };
-		D6CA50192734130F001363AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50182734130F001363AB /* ViewController.swift */; };
-		D6CA501C2734130F001363AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CA501A2734130F001363AB /* Main.storyboard */; };
-		D6CA501E27341310001363AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CA501D27341310001363AB /* Assets.xcassets */; };
-		D6CA502127341310001363AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CA501F27341310001363AB /* LaunchScreen.storyboard */; };
+		D6CA5031273413D2001363AB /* SmartRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA502F273413D2001363AB /* SmartRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA504B27341939001363AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA504A27341939001363AB /* AppDelegate.swift */; };
+		D6CA504D2734193A001363AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA504C2734193A001363AB /* SceneDelegate.swift */; };
+		D6CA504F2734193A001363AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA504E2734193A001363AB /* ViewController.swift */; };
+		D6CA50522734193A001363AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CA50502734193A001363AB /* Main.storyboard */; };
+		D6CA50542734193B001363AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CA50532734193B001363AB /* Assets.xcassets */; };
+		D6CA50572734193B001363AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CA50552734193B001363AB /* LaunchScreen.storyboard */; };
+		D6CA50C627341B8A001363AB /* UIRefreshGameHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA508A27341B8A001363AB /* UIRefreshGameHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50C727341B8A001363AB /* UIRefreshGamePlayingScene.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA508B27341B8A001363AB /* UIRefreshGamePlayingScene.h */; };
+		D6CA50C827341B8A001363AB /* UIRefreshGamePlayingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA508C27341B8A001363AB /* UIRefreshGamePlayingScene.m */; };
+		D6CA50C927341B8A001363AB /* UIRefreshGameStartScene.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA508D27341B8A001363AB /* UIRefreshGameStartScene.h */; };
+		D6CA50CA27341B8A001363AB /* UIRefreshGameStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA508E27341B8A001363AB /* UIRefreshGameStartScene.m */; };
+		D6CA50CB27341B8A001363AB /* UIRefreshGameHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA508F27341B8A001363AB /* UIRefreshGameHeader.m */; };
+		D6CA50CC27341B8A001363AB /* UIRefreshClassicsFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509127341B8A001363AB /* UIRefreshClassicsFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50CD27341B8A001363AB /* UIRefreshClassicsFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA509227341B8A001363AB /* UIRefreshClassicsFooter.m */; };
+		D6CA50CE27341B8A001363AB /* UIRefreshBezierCircleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509427341B8A001363AB /* UIRefreshBezierCircleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50CF27341B8A001363AB /* UIRefreshBezierRadarHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509527341B8A001363AB /* UIRefreshBezierRadarHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50D027341B8A001363AB /* UIRefreshBezierCircleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA509627341B8A001363AB /* UIRefreshBezierCircleHeader.m */; };
+		D6CA50D127341B8A001363AB /* UIRefreshClassicsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509727341B8A001363AB /* UIRefreshClassicsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50D227341B8A001363AB /* UIRefreshDeliveryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509827341B8A001363AB /* UIRefreshDeliveryHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50D327341B8A001363AB /* UIRefreshDropBoxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509927341B8A001363AB /* UIRefreshDropBoxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50D427341B8A001363AB /* UIRefreshDeliveryHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA509A27341B8A001363AB /* UIRefreshDeliveryHeader.m */; };
+		D6CA50D527341B8A001363AB /* UIRefreshFlyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509B27341B8A001363AB /* UIRefreshFlyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50D627341B8A001363AB /* UIRefreshOriginalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA509C27341B8A001363AB /* UIRefreshOriginalHeader.m */; };
+		D6CA50D727341B8A001363AB /* UIRefreshGameBattleCityHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509D27341B8A001363AB /* UIRefreshGameBattleCityHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50D827341B8A001363AB /* UIRefreshGameBattleCityHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA509E27341B8A001363AB /* UIRefreshGameBattleCityHeader.m */; };
+		D6CA50D927341B8A001363AB /* UIRefreshGameHitBlockHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA509F27341B8A001363AB /* UIRefreshGameHitBlockHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50DA27341B8A001363AB /* UIRefreshGameHitBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50A027341B8A001363AB /* UIRefreshGameHitBlockHeader.m */; };
+		D6CA50DB27341B8A001363AB /* UIRefreshMaterialHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50A127341B8A001363AB /* UIRefreshMaterialHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50DC27341B8A001363AB /* UIRefreshTaurusHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50A227341B8A001363AB /* UIRefreshTaurusHeader.m */; };
+		D6CA50DD27341B8A001363AB /* UIRefreshOriginalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50A327341B8A001363AB /* UIRefreshOriginalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50DE27341B8A001363AB /* UIRefreshPhoenixHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50A427341B8A001363AB /* UIRefreshPhoenixHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50DF27341B8A001363AB /* UIRefreshStoreHouseHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50A527341B8A001363AB /* UIRefreshStoreHouseHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50E027341B8A001363AB /* UIRefreshTaurusHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50A627341B8A001363AB /* UIRefreshTaurusHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50E127341B8A001363AB /* UIRefreshDropBoxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50A727341B8A001363AB /* UIRefreshDropBoxHeader.m */; };
+		D6CA50E227341B8A001363AB /* UIRefreshWaveSwipeHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50A827341B8A001363AB /* UIRefreshWaveSwipeHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50E327341B8A001363AB /* UIRefreshWaveSwipeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50A927341B8A001363AB /* UIRefreshWaveSwipeHeader.m */; };
+		D6CA50E427341B8A001363AB /* UIRefreshBezierRadarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50AA27341B8A001363AB /* UIRefreshBezierRadarHeader.m */; };
+		D6CA50E527341B8A001363AB /* UIRefreshClassicsHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50AB27341B8A001363AB /* UIRefreshClassicsHeader.m */; };
+		D6CA50E627341B8A001363AB /* UIRefreshFlyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50AC27341B8A001363AB /* UIRefreshFlyHeader.m */; };
+		D6CA50E727341B8A001363AB /* UIRefreshStoreHouseHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50AD27341B8A001363AB /* UIRefreshStoreHouseHeader.m */; };
+		D6CA50E827341B8A001363AB /* UIRefreshMaterialHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50AE27341B8A001363AB /* UIRefreshMaterialHeader.m */; };
+		D6CA50E927341B8A001363AB /* UIRefreshPhoenixHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50AF27341B8A001363AB /* UIRefreshPhoenixHeader.m */; };
+		D6CA50EA27341B8A001363AB /* FlyView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50B127341B8A001363AB /* FlyView.h */; };
+		D6CA50EB27341B8A001363AB /* FlyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50B227341B8A001363AB /* FlyView.m */; };
+		D6CA50EC27341B8A001363AB /* MountainView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50B327341B8A001363AB /* MountainView.h */; };
+		D6CA50ED27341B8A001363AB /* MountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50B427341B8A001363AB /* MountainView.m */; };
+		D6CA50EF27341B8A001363AB /* UIRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50B727341B8A001363AB /* UIRefreshComponent.m */; };
+		D6CA50F027341B8A001363AB /* UIRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50B827341B8A001363AB /* UIRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50F227341B8A001363AB /* UIRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50BA27341B8A001363AB /* UIRefreshFooter.m */; };
+		D6CA50F927341B8A001363AB /* UIVectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50C127341B8A001363AB /* UIVectorView.h */; };
+		D6CA50FA27341B8A001363AB /* UIVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50C227341B8A001363AB /* UIVectorView.m */; };
+		D6CA50FB27341B8A001363AB /* UIRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA50C327341B8A001363AB /* UIRefreshHeader.m */; };
+		D6CA50FC27341B8A001363AB /* UIRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50C427341B8A001363AB /* UIRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA50FD27341B8A001363AB /* UIRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA50C527341B8A001363AB /* UIRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6CA512627341F27001363AB /* SmartRefreshControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CA502D273413D2001363AB /* SmartRefreshControl.framework */; };
+		D6CA512727341F27001363AB /* SmartRefreshControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6CA502D273413D2001363AB /* SmartRefreshControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6CA513927341F9F001363AB /* Element.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA512C27341F9F001363AB /* Element.h */; };
+		D6CA513A27341F9F001363AB /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA512D27341F9F001363AB /* Element.m */; };
+		D6CA513B27341F9F001363AB /* PathElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA512E27341F9F001363AB /* PathElement.h */; };
+		D6CA513C27341F9F001363AB /* PathElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA512F27341F9F001363AB /* PathElement.m */; };
+		D6CA513D27341F9F001363AB /* PathsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA513027341F9F001363AB /* PathsParser.h */; };
+		D6CA513E27341F9F001363AB /* PathsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA513127341F9F001363AB /* PathsParser.m */; };
+		D6CA513F27341F9F001363AB /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA513227341F9F001363AB /* Utilities.h */; };
+		D6CA514027341F9F001363AB /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA513327341F9F001363AB /* Utilities.m */; };
+		D6CA514127341F9F001363AB /* ValueAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA513427341F9F001363AB /* ValueAnimator.h */; };
+		D6CA514227341F9F001363AB /* ValueAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA513527341F9F001363AB /* ValueAnimator.m */; };
+		D6CA514327341F9F001363AB /* VectorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA513627341F9F001363AB /* VectorImage.h */; };
+		D6CA514427341F9F001363AB /* VectorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA513727341F9F001363AB /* VectorImage.m */; };
+		D6CA514B27342033001363AB /* StoreHouseLine.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA514727342033001363AB /* StoreHouseLine.h */; };
+		D6CA514C27342033001363AB /* StoreHouseLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA514827342033001363AB /* StoreHouseLine.m */; };
+		D6CA514D27342033001363AB /* StoreHousePath.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CA514927342033001363AB /* StoreHousePath.h */; };
+		D6CA514E27342033001363AB /* StoreHousePath.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA514A27342033001363AB /* StoreHousePath.m */; };
+		D6CA516827342BDF001363AB /* UIDemoHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515427342BDF001363AB /* UIDemoHeaderController.swift */; };
+		D6CA516927342BDF001363AB /* UIDemoFooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515527342BDF001363AB /* UIDemoFooterController.swift */; };
+		D6CA516A27342BDF001363AB /* UIDropBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515727342BDF001363AB /* UIDropBoxController.swift */; };
+		D6CA516B27342BDF001363AB /* UIBezierCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515827342BDF001363AB /* UIBezierCircleController.swift */; };
+		D6CA516C27342BDF001363AB /* UIGameHitBlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515927342BDF001363AB /* UIGameHitBlockController.swift */; };
+		D6CA516D27342BDF001363AB /* UIWaveSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515A27342BDF001363AB /* UIWaveSwipeController.swift */; };
+		D6CA516E27342BDF001363AB /* UIBezierRadarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515B27342BDF001363AB /* UIBezierRadarController.swift */; };
+		D6CA516F27342BDF001363AB /* UIDeliveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515C27342BDF001363AB /* UIDeliveryController.swift */; };
+		D6CA517027342BDF001363AB /* UIClassicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515D27342BDF001363AB /* UIClassicsController.swift */; };
+		D6CA517127342BDF001363AB /* UIMaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515E27342BDF001363AB /* UIMaterialController.swift */; };
+		D6CA517227342BDF001363AB /* UIFlyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA515F27342BDF001363AB /* UIFlyController.swift */; };
+		D6CA517327342BDF001363AB /* UITaurusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA516027342BDF001363AB /* UITaurusController.swift */; };
+		D6CA517427342BDF001363AB /* UIStoreHouseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA516127342BDF001363AB /* UIStoreHouseController.swift */; };
+		D6CA517527342BDF001363AB /* UIGameBattleCityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA516227342BDF001363AB /* UIGameBattleCityController.swift */; };
+		D6CA517627342BDF001363AB /* UIPhoenixController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA516327342BDF001363AB /* UIPhoenixController.swift */; };
+		D6CA517727342BDF001363AB /* UIOriginalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA516427342BDF001363AB /* UIOriginalController.swift */; };
+		D6CA517827342BDF001363AB /* UIClassicsFooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA516627342BDF001363AB /* UIClassicsFooterController.swift */; };
+		D6CA517927342BDF001363AB /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA516727342BDF001363AB /* DemoViewController.swift */; };
+		D6CA517B27343578001363AB /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA517A27343578001363AB /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D6CA512827341F27001363AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6CA50092734130F001363AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6CA502C273413D2001363AB;
+			remoteInfo = SmartRefreshControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6CA512A27341F27001363AB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D6CA512727341F27001363AB /* SmartRefreshControl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D6CA50112734130F001363AB /* SmartRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6CA50142734130F001363AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6CA50162734130F001363AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6CA50182734130F001363AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D6CA501B2734130F001363AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D6CA501D27341310001363AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6CA502027341310001363AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D6CA502227341310001363AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CA502D273413D2001363AB /* SmartRefreshControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmartRefreshControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CA502F273413D2001363AB /* SmartRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartRefreshControl.h; sourceTree = "<group>"; };
+		D6CA5030273413D2001363AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CA504827341939001363AB /* SmartRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CA504A27341939001363AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6CA504C2734193A001363AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D6CA504E2734193A001363AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6CA50512734193A001363AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6CA50532734193B001363AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6CA50562734193B001363AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6CA50582734193B001363AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CA508A27341B8A001363AB /* UIRefreshGameHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshGameHeader.h; sourceTree = "<group>"; };
+		D6CA508B27341B8A001363AB /* UIRefreshGamePlayingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshGamePlayingScene.h; sourceTree = "<group>"; };
+		D6CA508C27341B8A001363AB /* UIRefreshGamePlayingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshGamePlayingScene.m; sourceTree = "<group>"; };
+		D6CA508D27341B8A001363AB /* UIRefreshGameStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshGameStartScene.h; sourceTree = "<group>"; };
+		D6CA508E27341B8A001363AB /* UIRefreshGameStartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshGameStartScene.m; sourceTree = "<group>"; };
+		D6CA508F27341B8A001363AB /* UIRefreshGameHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshGameHeader.m; sourceTree = "<group>"; };
+		D6CA509127341B8A001363AB /* UIRefreshClassicsFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshClassicsFooter.h; sourceTree = "<group>"; };
+		D6CA509227341B8A001363AB /* UIRefreshClassicsFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshClassicsFooter.m; sourceTree = "<group>"; };
+		D6CA509427341B8A001363AB /* UIRefreshBezierCircleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshBezierCircleHeader.h; sourceTree = "<group>"; };
+		D6CA509527341B8A001363AB /* UIRefreshBezierRadarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshBezierRadarHeader.h; sourceTree = "<group>"; };
+		D6CA509627341B8A001363AB /* UIRefreshBezierCircleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshBezierCircleHeader.m; sourceTree = "<group>"; };
+		D6CA509727341B8A001363AB /* UIRefreshClassicsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshClassicsHeader.h; sourceTree = "<group>"; };
+		D6CA509827341B8A001363AB /* UIRefreshDeliveryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshDeliveryHeader.h; sourceTree = "<group>"; };
+		D6CA509927341B8A001363AB /* UIRefreshDropBoxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshDropBoxHeader.h; sourceTree = "<group>"; };
+		D6CA509A27341B8A001363AB /* UIRefreshDeliveryHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshDeliveryHeader.m; sourceTree = "<group>"; };
+		D6CA509B27341B8A001363AB /* UIRefreshFlyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshFlyHeader.h; sourceTree = "<group>"; };
+		D6CA509C27341B8A001363AB /* UIRefreshOriginalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshOriginalHeader.m; sourceTree = "<group>"; };
+		D6CA509D27341B8A001363AB /* UIRefreshGameBattleCityHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshGameBattleCityHeader.h; sourceTree = "<group>"; };
+		D6CA509E27341B8A001363AB /* UIRefreshGameBattleCityHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshGameBattleCityHeader.m; sourceTree = "<group>"; };
+		D6CA509F27341B8A001363AB /* UIRefreshGameHitBlockHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshGameHitBlockHeader.h; sourceTree = "<group>"; };
+		D6CA50A027341B8A001363AB /* UIRefreshGameHitBlockHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshGameHitBlockHeader.m; sourceTree = "<group>"; };
+		D6CA50A127341B8A001363AB /* UIRefreshMaterialHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshMaterialHeader.h; sourceTree = "<group>"; };
+		D6CA50A227341B8A001363AB /* UIRefreshTaurusHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshTaurusHeader.m; sourceTree = "<group>"; };
+		D6CA50A327341B8A001363AB /* UIRefreshOriginalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshOriginalHeader.h; sourceTree = "<group>"; };
+		D6CA50A427341B8A001363AB /* UIRefreshPhoenixHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshPhoenixHeader.h; sourceTree = "<group>"; };
+		D6CA50A527341B8A001363AB /* UIRefreshStoreHouseHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshStoreHouseHeader.h; sourceTree = "<group>"; };
+		D6CA50A627341B8A001363AB /* UIRefreshTaurusHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshTaurusHeader.h; sourceTree = "<group>"; };
+		D6CA50A727341B8A001363AB /* UIRefreshDropBoxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshDropBoxHeader.m; sourceTree = "<group>"; };
+		D6CA50A827341B8A001363AB /* UIRefreshWaveSwipeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshWaveSwipeHeader.h; sourceTree = "<group>"; };
+		D6CA50A927341B8A001363AB /* UIRefreshWaveSwipeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshWaveSwipeHeader.m; sourceTree = "<group>"; };
+		D6CA50AA27341B8A001363AB /* UIRefreshBezierRadarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshBezierRadarHeader.m; sourceTree = "<group>"; };
+		D6CA50AB27341B8A001363AB /* UIRefreshClassicsHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshClassicsHeader.m; sourceTree = "<group>"; };
+		D6CA50AC27341B8A001363AB /* UIRefreshFlyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshFlyHeader.m; sourceTree = "<group>"; };
+		D6CA50AD27341B8A001363AB /* UIRefreshStoreHouseHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshStoreHouseHeader.m; sourceTree = "<group>"; };
+		D6CA50AE27341B8A001363AB /* UIRefreshMaterialHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshMaterialHeader.m; sourceTree = "<group>"; };
+		D6CA50AF27341B8A001363AB /* UIRefreshPhoenixHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshPhoenixHeader.m; sourceTree = "<group>"; };
+		D6CA50B127341B8A001363AB /* FlyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyView.h; sourceTree = "<group>"; };
+		D6CA50B227341B8A001363AB /* FlyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyView.m; sourceTree = "<group>"; };
+		D6CA50B327341B8A001363AB /* MountainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountainView.h; sourceTree = "<group>"; };
+		D6CA50B427341B8A001363AB /* MountainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainView.m; sourceTree = "<group>"; };
+		D6CA50B727341B8A001363AB /* UIRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshComponent.m; sourceTree = "<group>"; };
+		D6CA50B827341B8A001363AB /* UIRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshHeader.h; sourceTree = "<group>"; };
+		D6CA50BA27341B8A001363AB /* UIRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshFooter.m; sourceTree = "<group>"; };
+		D6CA50C127341B8A001363AB /* UIVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVectorView.h; sourceTree = "<group>"; };
+		D6CA50C227341B8A001363AB /* UIVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVectorView.m; sourceTree = "<group>"; };
+		D6CA50C327341B8A001363AB /* UIRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshHeader.m; sourceTree = "<group>"; };
+		D6CA50C427341B8A001363AB /* UIRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshFooter.h; sourceTree = "<group>"; };
+		D6CA50C527341B8A001363AB /* UIRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshComponent.h; sourceTree = "<group>"; };
+		D6CA512C27341F9F001363AB /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		D6CA512D27341F9F001363AB /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
+		D6CA512E27341F9F001363AB /* PathElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathElement.h; sourceTree = "<group>"; };
+		D6CA512F27341F9F001363AB /* PathElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathElement.m; sourceTree = "<group>"; };
+		D6CA513027341F9F001363AB /* PathsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathsParser.h; sourceTree = "<group>"; };
+		D6CA513127341F9F001363AB /* PathsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathsParser.m; sourceTree = "<group>"; };
+		D6CA513227341F9F001363AB /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		D6CA513327341F9F001363AB /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		D6CA513427341F9F001363AB /* ValueAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueAnimator.h; sourceTree = "<group>"; };
+		D6CA513527341F9F001363AB /* ValueAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueAnimator.m; sourceTree = "<group>"; };
+		D6CA513627341F9F001363AB /* VectorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorImage.h; sourceTree = "<group>"; };
+		D6CA513727341F9F001363AB /* VectorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VectorImage.m; sourceTree = "<group>"; };
+		D6CA514727342033001363AB /* StoreHouseLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreHouseLine.h; sourceTree = "<group>"; };
+		D6CA514827342033001363AB /* StoreHouseLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreHouseLine.m; sourceTree = "<group>"; };
+		D6CA514927342033001363AB /* StoreHousePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreHousePath.h; sourceTree = "<group>"; };
+		D6CA514A27342033001363AB /* StoreHousePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreHousePath.m; sourceTree = "<group>"; };
+		D6CA514F2734220D001363AB /* SmartRefreshDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartRefreshDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6CA515427342BDF001363AB /* UIDemoHeaderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDemoHeaderController.swift; sourceTree = "<group>"; };
+		D6CA515527342BDF001363AB /* UIDemoFooterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDemoFooterController.swift; sourceTree = "<group>"; };
+		D6CA515727342BDF001363AB /* UIDropBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDropBoxController.swift; sourceTree = "<group>"; };
+		D6CA515827342BDF001363AB /* UIBezierCircleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierCircleController.swift; sourceTree = "<group>"; };
+		D6CA515927342BDF001363AB /* UIGameHitBlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGameHitBlockController.swift; sourceTree = "<group>"; };
+		D6CA515A27342BDF001363AB /* UIWaveSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWaveSwipeController.swift; sourceTree = "<group>"; };
+		D6CA515B27342BDF001363AB /* UIBezierRadarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierRadarController.swift; sourceTree = "<group>"; };
+		D6CA515C27342BDF001363AB /* UIDeliveryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeliveryController.swift; sourceTree = "<group>"; };
+		D6CA515D27342BDF001363AB /* UIClassicsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIClassicsController.swift; sourceTree = "<group>"; };
+		D6CA515E27342BDF001363AB /* UIMaterialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMaterialController.swift; sourceTree = "<group>"; };
+		D6CA515F27342BDF001363AB /* UIFlyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlyController.swift; sourceTree = "<group>"; };
+		D6CA516027342BDF001363AB /* UITaurusController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITaurusController.swift; sourceTree = "<group>"; };
+		D6CA516127342BDF001363AB /* UIStoreHouseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoreHouseController.swift; sourceTree = "<group>"; };
+		D6CA516227342BDF001363AB /* UIGameBattleCityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGameBattleCityController.swift; sourceTree = "<group>"; };
+		D6CA516327342BDF001363AB /* UIPhoenixController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPhoenixController.swift; sourceTree = "<group>"; };
+		D6CA516427342BDF001363AB /* UIOriginalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIOriginalController.swift; sourceTree = "<group>"; };
+		D6CA516627342BDF001363AB /* UIClassicsFooterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIClassicsFooterController.swift; sourceTree = "<group>"; };
+		D6CA516727342BDF001363AB /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		D6CA517A27343578001363AB /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D6CA500E2734130F001363AB /* Frameworks */ = {
+		D6CA502A273413D2001363AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CA504527341939001363AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CA512627341F27001363AB /* SmartRefreshControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,51 +245,297 @@
 		D6CA50082734130F001363AB = {
 			isa = PBXGroup;
 			children = (
-				D6CA50132734130F001363AB /* SmartRefresh */,
+				D6CA502E273413D2001363AB /* SmartRefreshControl */,
+				D6CA504927341939001363AB /* SmartRefreshDemo */,
 				D6CA50122734130F001363AB /* Products */,
+				D6CA512527341F27001363AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D6CA50122734130F001363AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6CA50112734130F001363AB /* SmartRefresh.app */,
+				D6CA502D273413D2001363AB /* SmartRefreshControl.framework */,
+				D6CA504827341939001363AB /* SmartRefreshDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6CA50132734130F001363AB /* SmartRefresh */ = {
+		D6CA502E273413D2001363AB /* SmartRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
-				D6CA50142734130F001363AB /* AppDelegate.swift */,
-				D6CA50162734130F001363AB /* SceneDelegate.swift */,
-				D6CA50182734130F001363AB /* ViewController.swift */,
-				D6CA501A2734130F001363AB /* Main.storyboard */,
-				D6CA501D27341310001363AB /* Assets.xcassets */,
-				D6CA501F27341310001363AB /* LaunchScreen.storyboard */,
-				D6CA502227341310001363AB /* Info.plist */,
+				D6CA514627342033001363AB /* StoreHouse */,
+				D6CA512B27341F9F001363AB /* Vector */,
+				D6CA50B527341B8A001363AB /* Component */,
+				D6CA50B027341B8A001363AB /* Fly */,
+				D6CA509027341B8A001363AB /* Footer */,
+				D6CA508927341B8A001363AB /* Game */,
+				D6CA509327341B8A001363AB /* Header */,
+				D6CA502F273413D2001363AB /* SmartRefreshControl.h */,
+				D6CA5030273413D2001363AB /* Info.plist */,
 			);
-			path = SmartRefresh;
+			path = SmartRefreshControl;
+			sourceTree = "<group>";
+		};
+		D6CA504927341939001363AB /* SmartRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA515327342BDE001363AB /* Demo */,
+				D6CA504A27341939001363AB /* AppDelegate.swift */,
+				D6CA504C2734193A001363AB /* SceneDelegate.swift */,
+				D6CA504E2734193A001363AB /* ViewController.swift */,
+				D6CA50502734193A001363AB /* Main.storyboard */,
+				D6CA50532734193B001363AB /* Assets.xcassets */,
+				D6CA50552734193B001363AB /* LaunchScreen.storyboard */,
+				D6CA50582734193B001363AB /* Info.plist */,
+				D6CA517A27343578001363AB /* NavigationViewController.swift */,
+				D6CA514F2734220D001363AB /* SmartRefreshDemo-Bridging-Header.h */,
+			);
+			path = SmartRefreshDemo;
+			sourceTree = "<group>";
+		};
+		D6CA508927341B8A001363AB /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA508A27341B8A001363AB /* UIRefreshGameHeader.h */,
+				D6CA508F27341B8A001363AB /* UIRefreshGameHeader.m */,
+				D6CA508B27341B8A001363AB /* UIRefreshGamePlayingScene.h */,
+				D6CA508C27341B8A001363AB /* UIRefreshGamePlayingScene.m */,
+				D6CA508D27341B8A001363AB /* UIRefreshGameStartScene.h */,
+				D6CA508E27341B8A001363AB /* UIRefreshGameStartScene.m */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		D6CA509027341B8A001363AB /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA509127341B8A001363AB /* UIRefreshClassicsFooter.h */,
+				D6CA509227341B8A001363AB /* UIRefreshClassicsFooter.m */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		D6CA509327341B8A001363AB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA509427341B8A001363AB /* UIRefreshBezierCircleHeader.h */,
+				D6CA509527341B8A001363AB /* UIRefreshBezierRadarHeader.h */,
+				D6CA509627341B8A001363AB /* UIRefreshBezierCircleHeader.m */,
+				D6CA509727341B8A001363AB /* UIRefreshClassicsHeader.h */,
+				D6CA509827341B8A001363AB /* UIRefreshDeliveryHeader.h */,
+				D6CA509927341B8A001363AB /* UIRefreshDropBoxHeader.h */,
+				D6CA509A27341B8A001363AB /* UIRefreshDeliveryHeader.m */,
+				D6CA509B27341B8A001363AB /* UIRefreshFlyHeader.h */,
+				D6CA509C27341B8A001363AB /* UIRefreshOriginalHeader.m */,
+				D6CA509D27341B8A001363AB /* UIRefreshGameBattleCityHeader.h */,
+				D6CA509E27341B8A001363AB /* UIRefreshGameBattleCityHeader.m */,
+				D6CA509F27341B8A001363AB /* UIRefreshGameHitBlockHeader.h */,
+				D6CA50A027341B8A001363AB /* UIRefreshGameHitBlockHeader.m */,
+				D6CA50A127341B8A001363AB /* UIRefreshMaterialHeader.h */,
+				D6CA50A227341B8A001363AB /* UIRefreshTaurusHeader.m */,
+				D6CA50A327341B8A001363AB /* UIRefreshOriginalHeader.h */,
+				D6CA50A427341B8A001363AB /* UIRefreshPhoenixHeader.h */,
+				D6CA50A527341B8A001363AB /* UIRefreshStoreHouseHeader.h */,
+				D6CA50A627341B8A001363AB /* UIRefreshTaurusHeader.h */,
+				D6CA50A727341B8A001363AB /* UIRefreshDropBoxHeader.m */,
+				D6CA50A827341B8A001363AB /* UIRefreshWaveSwipeHeader.h */,
+				D6CA50A927341B8A001363AB /* UIRefreshWaveSwipeHeader.m */,
+				D6CA50AA27341B8A001363AB /* UIRefreshBezierRadarHeader.m */,
+				D6CA50AB27341B8A001363AB /* UIRefreshClassicsHeader.m */,
+				D6CA50AC27341B8A001363AB /* UIRefreshFlyHeader.m */,
+				D6CA50AD27341B8A001363AB /* UIRefreshStoreHouseHeader.m */,
+				D6CA50AE27341B8A001363AB /* UIRefreshMaterialHeader.m */,
+				D6CA50AF27341B8A001363AB /* UIRefreshPhoenixHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D6CA50B027341B8A001363AB /* Fly */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA50B127341B8A001363AB /* FlyView.h */,
+				D6CA50B227341B8A001363AB /* FlyView.m */,
+				D6CA50B327341B8A001363AB /* MountainView.h */,
+				D6CA50B427341B8A001363AB /* MountainView.m */,
+			);
+			path = Fly;
+			sourceTree = "<group>";
+		};
+		D6CA50B527341B8A001363AB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA50B827341B8A001363AB /* UIRefreshHeader.h */,
+				D6CA50BA27341B8A001363AB /* UIRefreshFooter.m */,
+				D6CA50C127341B8A001363AB /* UIVectorView.h */,
+				D6CA50C227341B8A001363AB /* UIVectorView.m */,
+				D6CA50C327341B8A001363AB /* UIRefreshHeader.m */,
+				D6CA50C427341B8A001363AB /* UIRefreshFooter.h */,
+				D6CA50C527341B8A001363AB /* UIRefreshComponent.h */,
+				D6CA50B727341B8A001363AB /* UIRefreshComponent.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		D6CA512527341F27001363AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6CA512B27341F9F001363AB /* Vector */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA512C27341F9F001363AB /* Element.h */,
+				D6CA512D27341F9F001363AB /* Element.m */,
+				D6CA512E27341F9F001363AB /* PathElement.h */,
+				D6CA512F27341F9F001363AB /* PathElement.m */,
+				D6CA513027341F9F001363AB /* PathsParser.h */,
+				D6CA513127341F9F001363AB /* PathsParser.m */,
+				D6CA513227341F9F001363AB /* Utilities.h */,
+				D6CA513327341F9F001363AB /* Utilities.m */,
+				D6CA513427341F9F001363AB /* ValueAnimator.h */,
+				D6CA513527341F9F001363AB /* ValueAnimator.m */,
+				D6CA513627341F9F001363AB /* VectorImage.h */,
+				D6CA513727341F9F001363AB /* VectorImage.m */,
+			);
+			path = Vector;
+			sourceTree = "<group>";
+		};
+		D6CA514627342033001363AB /* StoreHouse */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA514727342033001363AB /* StoreHouseLine.h */,
+				D6CA514827342033001363AB /* StoreHouseLine.m */,
+				D6CA514927342033001363AB /* StoreHousePath.h */,
+				D6CA514A27342033001363AB /* StoreHousePath.m */,
+			);
+			path = StoreHouse;
+			sourceTree = "<group>";
+		};
+		D6CA515327342BDE001363AB /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA515627342BDF001363AB /* Header */,
+				D6CA516527342BDF001363AB /* Footer */,
+				D6CA515427342BDF001363AB /* UIDemoHeaderController.swift */,
+				D6CA515527342BDF001363AB /* UIDemoFooterController.swift */,
+				D6CA516727342BDF001363AB /* DemoViewController.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		D6CA515627342BDF001363AB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA515727342BDF001363AB /* UIDropBoxController.swift */,
+				D6CA515827342BDF001363AB /* UIBezierCircleController.swift */,
+				D6CA515927342BDF001363AB /* UIGameHitBlockController.swift */,
+				D6CA515A27342BDF001363AB /* UIWaveSwipeController.swift */,
+				D6CA515B27342BDF001363AB /* UIBezierRadarController.swift */,
+				D6CA515C27342BDF001363AB /* UIDeliveryController.swift */,
+				D6CA515D27342BDF001363AB /* UIClassicsController.swift */,
+				D6CA515E27342BDF001363AB /* UIMaterialController.swift */,
+				D6CA515F27342BDF001363AB /* UIFlyController.swift */,
+				D6CA516027342BDF001363AB /* UITaurusController.swift */,
+				D6CA516127342BDF001363AB /* UIStoreHouseController.swift */,
+				D6CA516227342BDF001363AB /* UIGameBattleCityController.swift */,
+				D6CA516327342BDF001363AB /* UIPhoenixController.swift */,
+				D6CA516427342BDF001363AB /* UIOriginalController.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D6CA516527342BDF001363AB /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				D6CA516627342BDF001363AB /* UIClassicsFooterController.swift */,
+			);
+			path = Footer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D6CA5028273413D2001363AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CA50CC27341B8A001363AB /* UIRefreshClassicsFooter.h in Headers */,
+				D6CA50D127341B8A001363AB /* UIRefreshClassicsHeader.h in Headers */,
+				D6CA50FC27341B8A001363AB /* UIRefreshFooter.h in Headers */,
+				D6CA50CE27341B8A001363AB /* UIRefreshBezierCircleHeader.h in Headers */,
+				D6CA513F27341F9F001363AB /* Utilities.h in Headers */,
+				D6CA50D927341B8A001363AB /* UIRefreshGameHitBlockHeader.h in Headers */,
+				D6CA50E227341B8A001363AB /* UIRefreshWaveSwipeHeader.h in Headers */,
+				D6CA50CF27341B8A001363AB /* UIRefreshBezierRadarHeader.h in Headers */,
+				D6CA50D727341B8A001363AB /* UIRefreshGameBattleCityHeader.h in Headers */,
+				D6CA50D327341B8A001363AB /* UIRefreshDropBoxHeader.h in Headers */,
+				D6CA50DB27341B8A001363AB /* UIRefreshMaterialHeader.h in Headers */,
+				D6CA50DD27341B8A001363AB /* UIRefreshOriginalHeader.h in Headers */,
+				D6CA50DF27341B8A001363AB /* UIRefreshStoreHouseHeader.h in Headers */,
+				D6CA50FD27341B8A001363AB /* UIRefreshComponent.h in Headers */,
+				D6CA50C627341B8A001363AB /* UIRefreshGameHeader.h in Headers */,
+				D6CA50DE27341B8A001363AB /* UIRefreshPhoenixHeader.h in Headers */,
+				D6CA50E027341B8A001363AB /* UIRefreshTaurusHeader.h in Headers */,
+				D6CA50D527341B8A001363AB /* UIRefreshFlyHeader.h in Headers */,
+				D6CA50D227341B8A001363AB /* UIRefreshDeliveryHeader.h in Headers */,
+				D6CA50F027341B8A001363AB /* UIRefreshHeader.h in Headers */,
+				D6CA513D27341F9F001363AB /* PathsParser.h in Headers */,
+				D6CA514327341F9F001363AB /* VectorImage.h in Headers */,
+				D6CA50EA27341B8A001363AB /* FlyView.h in Headers */,
+				D6CA50C727341B8A001363AB /* UIRefreshGamePlayingScene.h in Headers */,
+				D6CA513927341F9F001363AB /* Element.h in Headers */,
+				D6CA50EC27341B8A001363AB /* MountainView.h in Headers */,
+				D6CA514B27342033001363AB /* StoreHouseLine.h in Headers */,
+				D6CA5031273413D2001363AB /* SmartRefreshControl.h in Headers */,
+				D6CA50F927341B8A001363AB /* UIVectorView.h in Headers */,
+				D6CA514D27342033001363AB /* StoreHousePath.h in Headers */,
+				D6CA50C927341B8A001363AB /* UIRefreshGameStartScene.h in Headers */,
+				D6CA514127341F9F001363AB /* ValueAnimator.h in Headers */,
+				D6CA513B27341F9F001363AB /* PathElement.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D6CA50102734130F001363AB /* SmartRefresh */ = {
+		D6CA502C273413D2001363AB /* SmartRefreshControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6CA502527341310001363AB /* Build configuration list for PBXNativeTarget "SmartRefresh" */;
+			buildConfigurationList = D6CA5036273413D2001363AB /* Build configuration list for PBXNativeTarget "SmartRefreshControl" */;
 			buildPhases = (
-				D6CA500D2734130F001363AB /* Sources */,
-				D6CA500E2734130F001363AB /* Frameworks */,
-				D6CA500F2734130F001363AB /* Resources */,
+				D6CA5028273413D2001363AB /* Headers */,
+				D6CA5029273413D2001363AB /* Sources */,
+				D6CA502A273413D2001363AB /* Frameworks */,
+				D6CA502B273413D2001363AB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SmartRefresh;
-			productName = SmartRefresh;
-			productReference = D6CA50112734130F001363AB /* SmartRefresh.app */;
+			name = SmartRefreshControl;
+			productName = SmartRefreshControl;
+			productReference = D6CA502D273413D2001363AB /* SmartRefreshControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6CA504727341939001363AB /* SmartRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6CA50592734193B001363AB /* Build configuration list for PBXNativeTarget "SmartRefreshDemo" */;
+			buildPhases = (
+				D6CA504427341939001363AB /* Sources */,
+				D6CA504527341939001363AB /* Frameworks */,
+				D6CA504627341939001363AB /* Resources */,
+				D6CA512A27341F27001363AB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6CA512927341F27001363AB /* PBXTargetDependency */,
+			);
+			name = SmartRefreshDemo;
+			productName = SmartRefreshDemo;
+			productReference = D6CA504827341939001363AB /* SmartRefreshDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,8 +547,13 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					D6CA50102734130F001363AB = {
+					D6CA502C273413D2001363AB = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					D6CA504727341939001363AB = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -114,50 +570,124 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6CA50102734130F001363AB /* SmartRefresh */,
+				D6CA502C273413D2001363AB /* SmartRefreshControl */,
+				D6CA504727341939001363AB /* SmartRefreshDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D6CA500F2734130F001363AB /* Resources */ = {
+		D6CA502B273413D2001363AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CA502127341310001363AB /* LaunchScreen.storyboard in Resources */,
-				D6CA501E27341310001363AB /* Assets.xcassets in Resources */,
-				D6CA501C2734130F001363AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CA504627341939001363AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CA50572734193B001363AB /* LaunchScreen.storyboard in Resources */,
+				D6CA50542734193B001363AB /* Assets.xcassets in Resources */,
+				D6CA50522734193A001363AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D6CA500D2734130F001363AB /* Sources */ = {
+		D6CA5029273413D2001363AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CA50192734130F001363AB /* ViewController.swift in Sources */,
-				D6CA50152734130F001363AB /* AppDelegate.swift in Sources */,
-				D6CA50172734130F001363AB /* SceneDelegate.swift in Sources */,
+				D6CA50D427341B8A001363AB /* UIRefreshDeliveryHeader.m in Sources */,
+				D6CA50E627341B8A001363AB /* UIRefreshFlyHeader.m in Sources */,
+				D6CA50D027341B8A001363AB /* UIRefreshBezierCircleHeader.m in Sources */,
+				D6CA50DC27341B8A001363AB /* UIRefreshTaurusHeader.m in Sources */,
+				D6CA50C827341B8A001363AB /* UIRefreshGamePlayingScene.m in Sources */,
+				D6CA50EF27341B8A001363AB /* UIRefreshComponent.m in Sources */,
+				D6CA50CB27341B8A001363AB /* UIRefreshGameHeader.m in Sources */,
+				D6CA50CA27341B8A001363AB /* UIRefreshGameStartScene.m in Sources */,
+				D6CA50ED27341B8A001363AB /* MountainView.m in Sources */,
+				D6CA514427341F9F001363AB /* VectorImage.m in Sources */,
+				D6CA50DA27341B8A001363AB /* UIRefreshGameHitBlockHeader.m in Sources */,
+				D6CA514E27342033001363AB /* StoreHousePath.m in Sources */,
+				D6CA50E827341B8A001363AB /* UIRefreshMaterialHeader.m in Sources */,
+				D6CA50EB27341B8A001363AB /* FlyView.m in Sources */,
+				D6CA50CD27341B8A001363AB /* UIRefreshClassicsFooter.m in Sources */,
+				D6CA513E27341F9F001363AB /* PathsParser.m in Sources */,
+				D6CA50E927341B8A001363AB /* UIRefreshPhoenixHeader.m in Sources */,
+				D6CA50FB27341B8A001363AB /* UIRefreshHeader.m in Sources */,
+				D6CA50F227341B8A001363AB /* UIRefreshFooter.m in Sources */,
+				D6CA513A27341F9F001363AB /* Element.m in Sources */,
+				D6CA50E427341B8A001363AB /* UIRefreshBezierRadarHeader.m in Sources */,
+				D6CA50E527341B8A001363AB /* UIRefreshClassicsHeader.m in Sources */,
+				D6CA50FA27341B8A001363AB /* UIVectorView.m in Sources */,
+				D6CA50D627341B8A001363AB /* UIRefreshOriginalHeader.m in Sources */,
+				D6CA50D827341B8A001363AB /* UIRefreshGameBattleCityHeader.m in Sources */,
+				D6CA50E727341B8A001363AB /* UIRefreshStoreHouseHeader.m in Sources */,
+				D6CA50E327341B8A001363AB /* UIRefreshWaveSwipeHeader.m in Sources */,
+				D6CA50E127341B8A001363AB /* UIRefreshDropBoxHeader.m in Sources */,
+				D6CA514C27342033001363AB /* StoreHouseLine.m in Sources */,
+				D6CA514027341F9F001363AB /* Utilities.m in Sources */,
+				D6CA513C27341F9F001363AB /* PathElement.m in Sources */,
+				D6CA514227341F9F001363AB /* ValueAnimator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6CA504427341939001363AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CA517027342BDF001363AB /* UIClassicsController.swift in Sources */,
+				D6CA516C27342BDF001363AB /* UIGameHitBlockController.swift in Sources */,
+				D6CA517827342BDF001363AB /* UIClassicsFooterController.swift in Sources */,
+				D6CA517627342BDF001363AB /* UIPhoenixController.swift in Sources */,
+				D6CA517B27343578001363AB /* NavigationViewController.swift in Sources */,
+				D6CA516E27342BDF001363AB /* UIBezierRadarController.swift in Sources */,
+				D6CA517927342BDF001363AB /* DemoViewController.swift in Sources */,
+				D6CA517727342BDF001363AB /* UIOriginalController.swift in Sources */,
+				D6CA517427342BDF001363AB /* UIStoreHouseController.swift in Sources */,
+				D6CA517527342BDF001363AB /* UIGameBattleCityController.swift in Sources */,
+				D6CA504F2734193A001363AB /* ViewController.swift in Sources */,
+				D6CA504B27341939001363AB /* AppDelegate.swift in Sources */,
+				D6CA504D2734193A001363AB /* SceneDelegate.swift in Sources */,
+				D6CA516927342BDF001363AB /* UIDemoFooterController.swift in Sources */,
+				D6CA516827342BDF001363AB /* UIDemoHeaderController.swift in Sources */,
+				D6CA517327342BDF001363AB /* UITaurusController.swift in Sources */,
+				D6CA516D27342BDF001363AB /* UIWaveSwipeController.swift in Sources */,
+				D6CA517127342BDF001363AB /* UIMaterialController.swift in Sources */,
+				D6CA516B27342BDF001363AB /* UIBezierCircleController.swift in Sources */,
+				D6CA517227342BDF001363AB /* UIFlyController.swift in Sources */,
+				D6CA516A27342BDF001363AB /* UIDropBoxController.swift in Sources */,
+				D6CA516F27342BDF001363AB /* UIDeliveryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D6CA512927341F27001363AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6CA502C273413D2001363AB /* SmartRefreshControl */;
+			targetProxy = D6CA512827341F27001363AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		D6CA501A2734130F001363AB /* Main.storyboard */ = {
+		D6CA50502734193A001363AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6CA501B2734130F001363AB /* Base */,
+				D6CA50512734193A001363AB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D6CA501F27341310001363AB /* LaunchScreen.storyboard */ = {
+		D6CA50552734193B001363AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6CA502027341310001363AB /* Base */,
+				D6CA50562734193B001363AB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -281,39 +811,107 @@
 			};
 			name = Release;
 		};
-		D6CA502627341310001363AB /* Debug */ = {
+		D6CA5037273413D2001363AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V5LN95P8WR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SmartRefreshControl/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scwang.smart.refresh.control;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6CA5038273413D2001363AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V5LN95P8WR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SmartRefreshControl/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scwang.smart.refresh.control;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6CA505A2734193B001363AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5LN95P8WR;
-				INFOPLIST_FILE = SmartRefresh/Info.plist;
+				INFOPLIST_FILE = SmartRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.scwang.SmartRefresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scwang.smart.refresh.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartRefreshDemo/SmartRefreshDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D6CA502727341310001363AB /* Release */ = {
+		D6CA505B2734193B001363AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5LN95P8WR;
-				INFOPLIST_FILE = SmartRefresh/Info.plist;
+				INFOPLIST_FILE = SmartRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.scwang.SmartRefresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scwang.smart.refresh.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartRefreshDemo/SmartRefreshDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,11 +929,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6CA502527341310001363AB /* Build configuration list for PBXNativeTarget "SmartRefresh" */ = {
+		D6CA5036273413D2001363AB /* Build configuration list for PBXNativeTarget "SmartRefreshControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6CA502627341310001363AB /* Debug */,
-				D6CA502727341310001363AB /* Release */,
+				D6CA5037273413D2001363AB /* Debug */,
+				D6CA5038273413D2001363AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6CA50592734193B001363AB /* Build configuration list for PBXNativeTarget "SmartRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CA505A2734193B001363AB /* Debug */,
+				D6CA505B2734193B001363AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
