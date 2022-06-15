@@ -6,7 +6,11 @@
 //  Copyright © 2021 Teeyun. All rights reserved.
 //
 
+#if __has_include(<SmartRefreshControl/StoreHouseLine.h>)
+#import <SmartRefreshControl/StoreHouseLine.h>
+#else
 #import "StoreHouseLine.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

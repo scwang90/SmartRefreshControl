@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#if __has_include(<SmartRefreshControl/VectorImage.h>)
+#import <SmartRefreshControl/VectorImage.h>
+#else
 #import "VectorImage.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

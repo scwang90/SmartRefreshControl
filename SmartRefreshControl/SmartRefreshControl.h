@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
+
+#if __has_include(<SmartRefreshControl/SmartRefreshControl.h>)
+
 //! Project version number for SmartRefreshControl.
 FOUNDATION_EXPORT double SmartRefreshControlVersionNumber;
 
@@ -14,18 +17,6 @@ FOUNDATION_EXPORT double SmartRefreshControlVersionNumber;
 FOUNDATION_EXPORT const unsigned char SmartRefreshControlVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SmartRefreshControl/PublicHeader.h>
-
-
-//#import "Element.h"
-//#import "Utilities.h"
-//#import "PathElement.h"
-//#import "PathsParser.h"
-//#import "VectorImage.h"
-//#import "UIVectorView.h"
-//#import "StoreHousePath.h"
-
-
-#if __has_include(<SmartRefreshControl/UIRefreshComponent.h>)
 
 #import <SmartRefreshControl/UIRefreshFooter.h>
 #import <SmartRefreshControl/UIRefreshHeader.h>
@@ -50,6 +41,7 @@ FOUNDATION_EXPORT const unsigned char SmartRefreshControlVersionString[];
 
 #else
 
+#import "UIRefreshFooter.h"
 #import "UIRefreshHeader.h"
 #import "UIRefreshComponent.h"
 

@@ -8,8 +8,6 @@
 
 #import "UIRefreshClassicsHeader.h"
 
-//#import "UIVectorView.h"
-
 @interface UIRefreshClassicsHeader ()
 
 @property (nonatomic, strong) UILabel *labelTitle;

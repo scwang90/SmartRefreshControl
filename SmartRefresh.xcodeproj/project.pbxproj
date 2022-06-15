@@ -320,33 +320,33 @@
 			isa = PBXGroup;
 			children = (
 				D6CA509427341B8A001363AB /* UIRefreshBezierCircleHeader.h */,
-				D6CA509527341B8A001363AB /* UIRefreshBezierRadarHeader.h */,
 				D6CA509627341B8A001363AB /* UIRefreshBezierCircleHeader.m */,
+				D6CA509527341B8A001363AB /* UIRefreshBezierRadarHeader.h */,
+				D6CA50AA27341B8A001363AB /* UIRefreshBezierRadarHeader.m */,
 				D6CA509727341B8A001363AB /* UIRefreshClassicsHeader.h */,
+				D6CA50AB27341B8A001363AB /* UIRefreshClassicsHeader.m */,
 				D6CA509827341B8A001363AB /* UIRefreshDeliveryHeader.h */,
-				D6CA509927341B8A001363AB /* UIRefreshDropBoxHeader.h */,
 				D6CA509A27341B8A001363AB /* UIRefreshDeliveryHeader.m */,
+				D6CA509927341B8A001363AB /* UIRefreshDropBoxHeader.h */,
+				D6CA50A727341B8A001363AB /* UIRefreshDropBoxHeader.m */,
 				D6CA509B27341B8A001363AB /* UIRefreshFlyHeader.h */,
-				D6CA509C27341B8A001363AB /* UIRefreshOriginalHeader.m */,
+				D6CA50AC27341B8A001363AB /* UIRefreshFlyHeader.m */,
 				D6CA509D27341B8A001363AB /* UIRefreshGameBattleCityHeader.h */,
 				D6CA509E27341B8A001363AB /* UIRefreshGameBattleCityHeader.m */,
 				D6CA509F27341B8A001363AB /* UIRefreshGameHitBlockHeader.h */,
 				D6CA50A027341B8A001363AB /* UIRefreshGameHitBlockHeader.m */,
 				D6CA50A127341B8A001363AB /* UIRefreshMaterialHeader.h */,
-				D6CA50A227341B8A001363AB /* UIRefreshTaurusHeader.m */,
+				D6CA50AE27341B8A001363AB /* UIRefreshMaterialHeader.m */,
 				D6CA50A327341B8A001363AB /* UIRefreshOriginalHeader.h */,
+				D6CA509C27341B8A001363AB /* UIRefreshOriginalHeader.m */,
 				D6CA50A427341B8A001363AB /* UIRefreshPhoenixHeader.h */,
+				D6CA50AF27341B8A001363AB /* UIRefreshPhoenixHeader.m */,
 				D6CA50A527341B8A001363AB /* UIRefreshStoreHouseHeader.h */,
+				D6CA50AD27341B8A001363AB /* UIRefreshStoreHouseHeader.m */,
 				D6CA50A627341B8A001363AB /* UIRefreshTaurusHeader.h */,
-				D6CA50A727341B8A001363AB /* UIRefreshDropBoxHeader.m */,
+				D6CA50A227341B8A001363AB /* UIRefreshTaurusHeader.m */,
 				D6CA50A827341B8A001363AB /* UIRefreshWaveSwipeHeader.h */,
 				D6CA50A927341B8A001363AB /* UIRefreshWaveSwipeHeader.m */,
-				D6CA50AA27341B8A001363AB /* UIRefreshBezierRadarHeader.m */,
-				D6CA50AB27341B8A001363AB /* UIRefreshClassicsHeader.m */,
-				D6CA50AC27341B8A001363AB /* UIRefreshFlyHeader.m */,
-				D6CA50AD27341B8A001363AB /* UIRefreshStoreHouseHeader.m */,
-				D6CA50AE27341B8A001363AB /* UIRefreshMaterialHeader.m */,
-				D6CA50AF27341B8A001363AB /* UIRefreshPhoenixHeader.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -365,14 +365,14 @@
 		D6CA50B527341B8A001363AB /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				D6CA50B827341B8A001363AB /* UIRefreshHeader.h */,
-				D6CA50BA27341B8A001363AB /* UIRefreshFooter.m */,
-				D6CA50C127341B8A001363AB /* UIVectorView.h */,
-				D6CA50C227341B8A001363AB /* UIVectorView.m */,
-				D6CA50C327341B8A001363AB /* UIRefreshHeader.m */,
-				D6CA50C427341B8A001363AB /* UIRefreshFooter.h */,
 				D6CA50C527341B8A001363AB /* UIRefreshComponent.h */,
 				D6CA50B727341B8A001363AB /* UIRefreshComponent.m */,
+				D6CA50C427341B8A001363AB /* UIRefreshFooter.h */,
+				D6CA50BA27341B8A001363AB /* UIRefreshFooter.m */,
+				D6CA50B827341B8A001363AB /* UIRefreshHeader.h */,
+				D6CA50C327341B8A001363AB /* UIRefreshHeader.m */,
+				D6CA50C127341B8A001363AB /* UIVectorView.h */,
+				D6CA50C227341B8A001363AB /* UIVectorView.m */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -545,7 +545,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					D6CA502C273413D2001363AB = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -824,7 +824,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SmartRefreshControl/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -855,7 +855,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SmartRefreshControl/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,7 +6,11 @@
 //  Copyright © 2021 Teeyun. All rights reserved.
 //
 
+#if __has_include(<SmartRefreshControl/UIRefreshFooter.h>)
+#import <SmartRefreshControl/UIRefreshFooter.h>
+#else
 #import "UIRefreshFooter.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

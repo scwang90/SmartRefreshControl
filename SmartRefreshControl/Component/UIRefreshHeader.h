@@ -6,7 +6,11 @@
 //  Copyright © 2020 SCWANG. All rights reserve.d
 //
 
+#if __has_include(<SmartRefreshControl/UIRefreshComponent.h>)
+#import <SmartRefreshControl/UIRefreshComponent.h>
+#else
 #import "UIRefreshComponent.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

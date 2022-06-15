@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 
+#if __has_include(<SmartRefreshControl/Element.h>)
+#import <SmartRefreshControl/Element.h>
+#else
 #import "Element.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
