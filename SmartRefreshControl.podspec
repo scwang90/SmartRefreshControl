@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SmartRefreshControl"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "SmartRefresh for IOS"
 
   # This description is used to generate tags and improve search results.
@@ -80,9 +80,9 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/scwang90/SmartRefreshControl.git", :tag => "#{spec.version}" }
-
-
+  # spec.source       = { :git => "https://github.com/scwang90/SmartRefreshControl.git", :tag => "#{spec.version}" }
+  spec.source  = { :git => "https://gitee.com/scwang90/SmartRefreshControl.git", :tag => "#{spec.version}" }
+  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -91,8 +91,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "SmartRefreshControl", "SmartRefreshControl/**/*.{h,m}"
-  # spec.exclude_files = "SmartRefreshControl/Exclude"
+  # spec.source_files  = "SmartRefreshControl", "SmartRefreshControl/**/*.{h,m}"
+  spec.source_files  = "SmartRefreshControl/*.h", "SmartRefreshControl/**/*.{h,m}"
+  spec.exclude_files = "SmartRefreshControl/Exclude"
 
   spec.public_header_files = "SmartRefreshControl/*.h", "SmartRefreshCoontrol/**/*.h"
 

@@ -18,26 +18,48 @@ FOUNDATION_EXPORT const unsigned char SmartRefreshControlVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SmartRefreshControl/PublicHeader.h>
 
-#import <SmartRefreshControl/UIRefreshFooter.h>
-#import <SmartRefreshControl/UIRefreshHeader.h>
-#import <SmartRefreshControl/UIRefreshComponent.h>
+// #import <SmartRefreshControl/UIRefreshFooter.h>
+// #import <SmartRefreshControl/UIRefreshHeader.h>
+// #import <SmartRefreshControl/UIRefreshComponent.h>
 
-#import <SmartRefreshControl/UIRefreshClassicsHeader.h>
-#import <SmartRefreshControl/UIRefreshTaurusHeader.h>
-#import <SmartRefreshControl/UIRefreshPhoenixHeader.h>
-#import <SmartRefreshControl/UIRefreshDropBoxHeader.h>
-#import <SmartRefreshControl/UIRefreshDeliveryHeader.h>
-#import <SmartRefreshControl/UIRefreshBezierRadarHeader.h>
-#import <SmartRefreshControl/UIRefreshBezierCircleHeader.h>
-#import <SmartRefreshControl/UIRefreshOriginalHeader.h>
-#import <SmartRefreshControl/UIRefreshMaterialHeader.h>
-#import <SmartRefreshControl/UIRefreshWaveSwipeHeader.h>
-#import <SmartRefreshControl/UIRefreshStoreHouseHeader.h>
-#import <SmartRefreshControl/UIRefreshGameHitBlockHeader.h>
-#import <SmartRefreshControl/UIRefreshGameBattleCityHeader.h>
-#import <SmartRefreshControl/UIRefreshFlyHeader.h>
+// #import <SmartRefreshControl/UIRefreshClassicsHeader.h>
+// #import <SmartRefreshControl/UIRefreshTaurusHeader.h>
+// #import <SmartRefreshControl/UIRefreshPhoenixHeader.h>
+// #import <SmartRefreshControl/UIRefreshDropBoxHeader.h>
+// #import <SmartRefreshControl/UIRefreshDeliveryHeader.h>
+// #import <SmartRefreshControl/UIRefreshBezierRadarHeader.h>
+// #import <SmartRefreshControl/UIRefreshBezierCircleHeader.h>
+// #import <SmartRefreshControl/UIRefreshOriginalHeader.h>
+// #import <SmartRefreshControl/UIRefreshMaterialHeader.h>
+// #import <SmartRefreshControl/UIRefreshWaveSwipeHeader.h>
+// #import <SmartRefreshControl/UIRefreshStoreHouseHeader.h>
+// #import <SmartRefreshControl/UIRefreshGameHitBlockHeader.h>
+// #import <SmartRefreshControl/UIRefreshGameBattleCityHeader.h>
+// #import <SmartRefreshControl/UIRefreshFlyHeader.h>
 
-#import <SmartRefreshControl/UIRefreshClassicsFooter.h>
+// #import <SmartRefreshControl/UIRefreshClassicsFooter.h>
+
+#import "UIRefreshFooter.h"
+#import "UIRefreshHeader.h"
+#import "UIRefreshComponent.h"
+
+#import "UIRefreshClassicsHeader.h"
+#import "UIRefreshTaurusHeader.h"
+#import "UIRefreshPhoenixHeader.h"
+#import "UIRefreshDropBoxHeader.h"
+#import "UIRefreshDeliveryHeader.h"
+#import "UIRefreshBezierRadarHeader.h"
+#import "UIRefreshBezierCircleHeader.h"
+#import "UIRefreshOriginalHeader.h"
+#import "UIRefreshMaterialHeader.h"
+#import "UIRefreshWaveSwipeHeader.h"
+#import "UIRefreshStoreHouseHeader.h"
+#import "UIRefreshGameHitBlockHeader.h"
+#import "UIRefreshGameBattleCityHeader.h"
+#import "UIRefreshFlyHeader.h"
+
+#import "UIRefreshClassicsFooter.h"
+
 
 #else
 
