@@ -28,8 +28,6 @@
 #import "UIRefreshGameBattleCityHeader.h"
 #import "UIRefreshFlyHeader.h"
 
-#import "UISmartClassicsFooter.h"
-
 #import "MJRefreshNormalHeader.h"
 #import "KafkaRefresh.h"
 #import "UIRefreshSystemHeader.h"

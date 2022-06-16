@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SmartRefreshControl"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "SmartRefresh for IOS"
 
   # This description is used to generate tags and improve search results.
@@ -92,11 +92,11 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "SmartRefreshControl", "SmartRefreshControl/**/*.{h,m}"
-  spec.source_files  = "SmartRefreshControl/*.h", "SmartRefreshControl/**/*.{h,m}"
-  spec.exclude_files = "SmartRefreshControl/Exclude"
+  spec.source_files  = "SmartRefreshControl/**/*.{h,m}"
+  spec.exclude_files = "Refresh-Bridging-Header.h"
 
-  spec.public_header_files = "SmartRefreshControl/*.h", "SmartRefreshCoontrol/**/*.h"
-
+  spec.public_header_files = "SmartRefreshCoontrol/**/*.h"
+  # "SmartRefreshControl/*.h",
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
