@@ -18,11 +18,7 @@ FOUNDATION_EXPORT const unsigned char SmartRefreshControlVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SmartRefreshControl/PublicHeader.h>
 
-#if __has_include(<SmartRefreshControl/UIRefreshFooter.h>)
-#import "UIRefreshFooter.h"
-#else
 #import <SmartRefreshControl/UIRefreshFooter.h>
-#endif
 #import <SmartRefreshControl/UIRefreshHeader.h>
 #import <SmartRefreshControl/UIRefreshComponent.h>
 
