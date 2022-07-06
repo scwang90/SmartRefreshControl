@@ -90,61 +90,56 @@ SmartRefreshControl 是 [SmartRefreshLayout](https://github.com/scwang90/SmartRe
 
 ## 简单用例
 
-#### 1.在 build.gradle 中添加依赖
+#### 1.在 `Podfile` 中添加依赖
 
 
 ```
-// 注意：分包之后不会有默认的Header和Footer需要手动添加！还是原来的三种方法！
-implementation  'com.scwang.smart:refresh-layout-kernel:2.0.0'      //核心必须依赖
-implementation  'com.scwang.smart:refresh-header-classics:2.0.0'    //经典刷新头
-implementation  'com.scwang.smart:refresh-header-radar:2.0.0'       //雷达刷新头
-implementation  'com.scwang.smart:refresh-header-falsify:2.0.0'     //虚拟刷新头
-implementation  'com.scwang.smart:refresh-header-material:2.0.0'    //谷歌刷新头
-implementation  'com.scwang.smart:refresh-header-two-level:2.0.0'   //二级刷新头
-implementation  'com.scwang.smart:refresh-footer-ball:2.0.0'        //球脉冲加载
-implementation  'com.scwang.smart:refresh-footer-classics:2.0.0'    //经典加载
+pod 'SmartRefreshControl', '~> 0.0.8'
+```
+
+#### 2.在 `ViewControler` 中添加刷新头
+```ObjectiveC
+@interface UITableViewController ()
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;  
+@property (strong, nonatomic) UIRefreshClassicsHeader *header;  //申明刷新头属性，必须，后面关闭刷新要用到
+
+@end
+
+@implementation UITableViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //方式1: 初始化同时绑定事件
+    [self setHeader:[UIRefreshClassicsHeader attach:self.tableView target:self action:@selector(onRefresh)]];
+
+    //方式2: 先初始化，再绑定事件
+    [self setHeader:[UIRefreshClassicsHeader attach:self.tableView]];
+    [self.header addTarget:self action:@selector(onRefresh)];
+
+    //方式2: 先创建，再绑定
+    [self setHeader:[UIRefreshClassicsHeader new]];
+    [self.header attach:self.tableView];
+    [self.header addTarget:self action:@selector(onRefresh)];
+
+}
+
+@end
 
 ```
 
-#### 2.在XML布局文件中添加 SmartRefreshLayout
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/refreshLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <com.scwang.smart.refresh.header.ClassicsHeader
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:overScrollMode="never"
-        android:background="#fff" />
-    <com.scwang.smart.refresh.footer.ClassicsFooter
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</com.scwang.smart.refresh.layout.SmartRefreshLayout>
-```
+#### 3.添加刷新监听事件
+```ObjectiveC
 
-#### 3.在 Activity 或者 Fragment 中添加代码
-```java
-RefreshLayout refreshLayout = (RefreshLayout)findViewById(R.id.refreshLayout);
-refreshLayout.setRefreshHeader(new ClassicsHeader(this));
-refreshLayout.setRefreshFooter(new ClassicsFooter(this));
-refreshLayout.setOnRefreshListener(new OnRefreshListener() {
-    @Override
-    public void onRefresh(RefreshLayout refreshlayout) {
-        refreshlayout.finishRefresh(2000/*,false*/);//传入false表示刷新失败
-    }
-});
-refreshLayout.setOnLoadMoreListener(new OnLoadMoreListener() {
-    @Override
-    public void onLoadMore(RefreshLayout refreshlayout) {
-        refreshlayout.finishLoadMore(2000/*,false*/);//传入false表示加载失败
-    }
-});
+@implementation UITableViewController
+
+- (void)onRefresh {
+    [self.header finishRefresh]; //关闭刷新，可以改成请求网络，成功/失败之后再关闭刷新
+}
+
+@end
+
 ```
 
 ## 赞赏
