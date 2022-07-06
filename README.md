@@ -99,10 +99,15 @@ pod 'SmartRefreshControl', '~> 0.0.8'
 
 #### 2.在 `ViewControler` 中添加刷新头
 ```ObjectiveC
+
+#import "SmartRefreshControl.h"
+//或者
+#import <SmartRefreshControl/SmartRefreshControl.h>
+
 @interface UITableViewController ()
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;  
-@property (strong, nonatomic) UIRefreshClassicsHeader *header;  //申明刷新头属性，必须，后面关闭刷新要用到
+@property (strong, nonatomic) UIRefreshBezierRadarHeader *header;  //申明刷新头属性，必须，后面关闭刷新要用到
 
 @end
 
@@ -112,14 +117,14 @@ pod 'SmartRefreshControl', '~> 0.0.8'
     [super viewDidLoad];
     
     //方式1: 初始化同时绑定事件
-    [self setHeader:[UIRefreshClassicsHeader attach:self.tableView target:self action:@selector(onRefresh)]];
+    [self setHeader:[UIRefreshBezierRadarHeader attach:self.tableView target:self action:@selector(onRefresh)]];
 
     //方式2: 先初始化，再绑定事件
-    [self setHeader:[UIRefreshClassicsHeader attach:self.tableView]];
+    [self setHeader:[UIRefreshBezierRadarHeader attach:self.tableView]];
     [self.header addTarget:self action:@selector(onRefresh)];
 
     //方式2: 先创建，再绑定
-    [self setHeader:[UIRefreshClassicsHeader new]];
+    [self setHeader:[UIRefreshBezierRadarHeader new]];
     [self.header attach:self.tableView];
     [self.header addTarget:self action:@selector(onRefresh)];
 
