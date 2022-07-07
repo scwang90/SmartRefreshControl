@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/badge/Platform-IOS-f0ad4e.svg)](https://developer.apple.com/)
 [![Author](https://img.shields.io/badge/Author-scwang90-11bbff.svg)](https://github.com/scwang90)
 
-## [English](art/gif/README_EN.md) | 中文
+<!-- ## [English](art/gif/README_EN.md) | 中文 -->
 
 SmartRefreshControl 是 [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout) 的IOS版，和Android版在 `理念` 和 `外观` 上面保留相同的设计，但是由于 Android 和 IOS 两个系统的差别，IOS版本在功能使用和特性上与安卓版有所差别。刷新控件使用 ObjectiveC 语言编写，演示 DemoApp 使用 Swift 语言编写。 
 
