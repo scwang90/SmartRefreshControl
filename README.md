@@ -1,8 +1,8 @@
 # IOS 智能下拉刷新框架 - SmartRefreshControl
 
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Arsenal](https://img.shields.io/badge/Pod%20-%20SmartRefresh-4cae4c.svg)](https://android-arsenal.com/details/1/6001)
-[![Platform](https://img.shields.io/badge/Platform-IOS-f0ad4e.svg)](https://www.android.com)
+[![Cocoapods](https://img.shields.io/badge/Pod%20-%20SmartRefresh-4cae4c.svg)](https://www.cocoapods.org/)
+[![Platform](https://img.shields.io/badge/Platform-IOS-f0ad4e.svg)](https://developer.apple.com/)
 [![Author](https://img.shields.io/badge/Author-scwang90-11bbff.svg)](https://github.com/scwang90)
 
 ## [English](art/gif/README_EN.md) | 中文
@@ -94,20 +94,21 @@ SmartRefreshControl 是 [SmartRefreshLayout](https://github.com/scwang90/SmartRe
 
 
 ```
-pod 'SmartRefreshControl', '~> 0.0.8'
+
+pod 'SmartRefreshControl', '~> 0.1.0'
+
 ```
 
-#### 2.在 `ViewControler` 中添加刷新头
+#### 2.在 `UITableViewController` 中添加刷新头
+
 ```ObjectiveC
 
-#import "SmartRefreshControl.h"
-//或者
 #import <SmartRefreshControl/SmartRefreshControl.h>
 
 @interface UITableViewController ()
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;  
-@property (strong, nonatomic) UIRefreshBezierRadarHeader *header;  //申明刷新头属性，必须，后面关闭刷新要用到
+@property (strong, nonatomic) UIRefreshBezierRadarHeader *header;  
 
 @end
 
@@ -135,6 +136,7 @@ pod 'SmartRefreshControl', '~> 0.0.8'
 ```
 
 #### 3.添加刷新监听事件
+
 ```ObjectiveC
 
 @implementation UITableViewController
@@ -147,62 +149,27 @@ pod 'SmartRefreshControl', '~> 0.0.8'
 
 ```
 
-## 赞赏
-
-如果你喜欢 SmartRefreshLayout 的设计，感觉 SmartRefreshLayout 帮助到了你，可以点右上角 "Star" 支持一下 谢谢！ ^_^
-你也还可以扫描下面的二维码~ 请作者喝一杯咖啡。
-
-![](https://github.com/scwang90/SmartRefreshLayout/blob/master/art/pay_alipay.jpg?raw=true) ![](https://github.com/scwang90/SmartRefreshLayout/blob/master/art/pay_wxpay.jpg?raw=true) ![](https://github.com/scwang90/SmartRefreshLayout/blob/master/art/pay_tencent.jpg?raw=true)
-
-> 如果希望捐赠之后能获得相关的帮助，可以选择加入下面的付费群来取代普通捐赠，付费群可以直接获得作者的直接帮助，与问题反馈。
-
-如果在捐赠留言中备注名称，将会被记录到列表中~ 如果你也是github开源作者，捐赠时可以留下github项目地址或者个人主页地址，链接将会被添加到列表中起到互相推广的作用
-[捐赠列表](https://github.com/scwang90/SmartRefreshLayout/blob/master/art/md_donationlist.md)
-
-## 讨论
-
-### QQ解决群 - 602537182 （付费）
-#### 进群须知
-自开群以来，还是有很多的朋友提出了很多问题，我也解决了很多问题，其中有大半问题是本库的Bug导致，也有些是使用者项目本
-身的环境问题，这花费了我大量的时间，经过我的观察和测试，到目前为止，本库的bug已经越来越少，当然不能说完全没有，但是
-已经能满足很大部分项目的需求。所以从现在起，我做出一个决定：把之前的讨论群改成解决群，并开启付费入群功能，专为解决大
-家在使用本库时遇到的问题，不管是本库bug还是，特殊的项目环境导致（包含项目本身的bug）。
-我也有自己的工作和娱乐时间，只有大家理解和支持我，我才能专心的为大家解决问题。不过用担心，我已经建立了另一个可以免费
-进入的QQ讨论群。
-
-### QQ讨论群 - 914275312 （新） 477963933 （满）  538979188 （满）
-#### 进群须知
-这个群，免费进入，大家可以相互讨论本库的相关使用和出现的问题，群主也会在里面解决问题，如果提出的问题，群成员不能帮助
-解决，需要群主解决，但是要花费群主五分钟以上的时间（本库Bug除外），群主将不会解决这个问题，如果项目紧急，请付费进入解
-决群解决（不过注意，付费群中群主会很认真很努力的解决问题，但也不能保证已经能完美解决）或者转换使用其他的刷新库。
-
-加入群的答案在本文档中可以找到~
-
-## 其他作品
-[MultiWaveHeader](https://github.com/scwang90/MultiWaveHeader)  
-[SmartRefreshHorizontal](https://github.com/scwang90/SmartRefreshLayout)  
-[SmartRefreshHorizontal](https://github.com/scwang90/SmartRefreshHorizontal)  
-[诗和远方](http://android.myapp.com/myapp/detail.htm?apkName=com.poetry.kernel)  
-
-## 感谢
-[SwipeRefreshLayout](https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html)  
-[Ultra-Pull-To-Refresh](https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh)  
-[TwinklingRefreshLayout](https://github.com/lcodecorex/TwinklingRefreshLayout)  
-[BeautifulRefreshLayout](https://github.com/android-cjj/BeautifulRefreshLayout)
-
 License
 -------
 
-    Copyright 2017 scwang90
+    MIT License
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+    Copyright (c) 2021 树朾
 
-       http://www.apache.org/licenses/LICENSE-2.0
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
